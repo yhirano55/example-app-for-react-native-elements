@@ -6,7 +6,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "lint": "tslint -c tslint.json src/**/*.{ts,tsx}",
+    "tslint": "tslint -c tslint.json src/**/*.{ts,tsx}",
+    "tslint-check": "tslint-config-prettier-check ./tslint.json",
     "prestorybook": "rnstl",
     "storybook": "start-storybook -p 7007"
   },
