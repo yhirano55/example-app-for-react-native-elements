@@ -7,6 +7,7 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "lint": "tslint -c tslint.json src/**/*.{ts,tsx}",
+    "prestorybook": "rnstl",
     "storybook": "start-storybook -p 7007"
   },
   "dependencies": {
@@ -32,6 +33,15 @@
     "react-native-storybook-loader": "^1.8.1",
     "tslint": "^6.1.0",
     "typescript": "~3.6.3"
+  },
+  "config": {
+    "react-native-storybook-loader": {
+      "searchDir": [
+        "./src"
+      ],
+      "pattern": "**/*.stories.tsx",
+      "outputFile": "./storybook/storyLoader.js"
+    }
   },
   "private": true
 }

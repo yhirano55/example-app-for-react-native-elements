@@ -1,2 +1,2 @@
-const STORYBOOK_START = true
-export default STORYBOOK_START ? require('./storybook').default : require('./src/App').default
+const ENABLE_STORYBOOK = true
+export default ENABLE_STORYBOOK ? require('./storybook').default : require('./src/App').default
