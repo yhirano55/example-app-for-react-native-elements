@@ -8,6 +8,7 @@ import { linkTo } from '@storybook/addon-links';
 import Button from './Button';
 import CenterView from './CenterView';
 import Welcome from './Welcome';
+import Simple from './Simple';
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
@@ -22,4 +23,9 @@ storiesOf('Button', module)
     <Button onPress={action('clicked-emoji')}>
       <Text>😀 😎 👍 💯</Text>
     </Button>
+  ));
+
+storiesOf('Simple', module)
+  .add('default', () => (
+    <Simple text={'TypeScript works!'} />
   ));
