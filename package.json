@@ -29,6 +29,7 @@
     "@types/storybook__react": "^5.2.1",
     "babel-loader": "^8.1.0",
     "babel-preset-expo": "~8.0.0",
+    "react-native-storybook-loader": "^1.8.1",
     "tslint": "^6.1.0",
     "typescript": "~3.6.3"
   },
