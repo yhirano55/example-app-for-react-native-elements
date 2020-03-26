@@ -33,6 +33,7 @@
     "prettier": "^2.0.2",
     "react-native-storybook-loader": "^1.8.1",
     "tslint": "^6.1.0",
+    "tslint-config-prettier": "^1.18.0",
     "typescript": "~3.6.3"
   },
   "config": {
