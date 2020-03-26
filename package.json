@@ -1,12 +1,12 @@
 {
-  "main": "node_modules/expo/AppEntry.js",
+  "main": "src/AppEntry.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "lint": "tslint -c tslint.json App.tsx src/**/*.tsx"
+    "lint": "tslint -c tslint.json src/**/*.{ts,tsx}"
   },
   "dependencies": {
     "expo": "~36.0.0",
