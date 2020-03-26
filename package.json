@@ -6,7 +6,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "lint": "tslint -c tslint.json src/**/*.{ts,tsx}"
+    "lint": "tslint -c tslint.json src/**/*.{ts,tsx}",
+    "storybook": "start-storybook -p 7007"
   },
   "dependencies": {
     "expo": "~36.0.0",
@@ -18,8 +19,14 @@
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
+    "@storybook/addon-actions": "^5.3.17",
+    "@storybook/addon-links": "^5.3.17",
+    "@storybook/addons": "^5.3.17",
+    "@storybook/react-native": "^5.3.17",
+    "@storybook/react-native-server": "^5.3.17",
     "@types/react": "~16.9.0",
     "@types/react-native": "~0.60.23",
+    "babel-loader": "^8.1.0",
     "babel-preset-expo": "~8.0.0",
     "tslint": "^6.1.0",
     "typescript": "~3.6.3"
