@@ -10,5 +10,8 @@ npm-debug.*
 web-build/
 web-report/
 
+# storybook
+storybook/storyLoader.js
+
 # macOS
 .DS_Store

@@ -6,7 +6,9 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "lint": "tslint -c tslint.json App.tsx src/**/*.tsx"
+    "lint": "tslint -c tslint.json src/**/*.{ts,tsx}",
+    "prestorybook": "rnstl",
+    "storybook": "start-storybook -p 7007"
   },
   "dependencies": {
     "expo": "~36.0.0",
@@ -18,11 +20,28 @@
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
+    "@storybook/addon-actions": "^5.3.17",
+    "@storybook/addon-links": "^5.3.17",
+    "@storybook/addons": "^5.3.17",
+    "@storybook/react-native": "^5.3.17",
+    "@storybook/react-native-server": "^5.3.17",
     "@types/react": "~16.9.0",
     "@types/react-native": "~0.60.23",
+    "@types/storybook__react": "^5.2.1",
+    "babel-loader": "^8.1.0",
     "babel-preset-expo": "~8.0.0",
+    "react-native-storybook-loader": "^1.8.1",
     "tslint": "^6.1.0",
     "typescript": "~3.6.3"
+  },
+  "config": {
+    "react-native-storybook-loader": {
+      "searchDir": [
+        "./src"
+      ],
+      "pattern": "**/*.stories.tsx",
+      "outputFile": "./storybook/storyLoader.js"
+    }
   },
   "private": true
 }
