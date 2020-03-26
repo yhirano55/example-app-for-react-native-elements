@@ -6,7 +6,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "lint": "tslint -c tslint.json src/**/*.{ts,tsx}",
+    "tslint": "tslint -c tslint.json src/**/*.{ts,tsx}",
+    "tslint-check": "tslint-config-prettier-check ./tslint.json",
     "prestorybook": "rnstl",
     "storybook": "start-storybook -p 7007"
   },
@@ -30,8 +31,11 @@
     "@types/storybook__react": "^5.2.1",
     "babel-loader": "^8.1.0",
     "babel-preset-expo": "~8.0.0",
+    "prettier": "^2.0.2",
     "react-native-storybook-loader": "^1.8.1",
     "tslint": "^6.1.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.2.0",
     "typescript": "~3.6.3"
   },
   "config": {
