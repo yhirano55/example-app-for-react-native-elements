@@ -2,11 +2,10 @@
   "defaultSeverity": "error",
   "extends": [
     "tslint:recommended",
-    "tslint-react",
     "tslint-config-prettier"
   ],
+  "rulesDirectory": ["tslint-plugin-prettier"],
   "rules": {
-    "semicolon": false,
-    "trailing-comma": false
+    "prettier": true
   }
 }
